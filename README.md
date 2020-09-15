@@ -4,7 +4,7 @@
 
 # Winter Season of Code SLR
 Welcome to WSoC, an initiative by the Open Source Community at VIT-AP.\
-In case, you wish to learn more about WSoC, please redirect yourself to the [website](https://www.wsocbyosc.com).
+In case, you wish to learn more about WSoC, please redirect yourself to the WSoC [website](https://www.wsocbyosc.com).
 
 ## Details on how to apply for shortlisting
   - Fork the repository to your own GitHub account, by clicking on the fork button at the top-right corner.
