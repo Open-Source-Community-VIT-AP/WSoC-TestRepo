@@ -7,14 +7,12 @@ Welcome to WSoC, an initiative by the Open Source Community at VIT-AP.\
 In case, you wish to learn more about WSoC, please redirect yourself to the [website](https://www.wsocbyosc.com).
 
 ## Details on how to apply for shortlisting
-  - Fork the repository to your own GitHub account, by clicking on the fork button at the top-right corner.
-  - Clone the forked repository to your local system.
+  - Clone the Repository to your local system.
   - Create a new child branch to work on, separate from the master branch.
   - The branch must follow a particular naming convention - *branch_registrationno*, example : **branch_28bce7339**, so that it becomes easier for us in processing your application.
   - You can work on either the frontend or the backend challenges, depending on whichever area you wish to focus on.
   - After finishing any task, commit, and push, to the branch that you've created.
-  - Upon completion of all the tasks, send a pull request in order to merge your branch onto the master branch.
-  - Now, send a pull request to the main repository from your fork to signify your submission.
+  - Upon completion of all the tasks, send a pull request in order to merge your branch onto the master branch signifying your submission.
 
 ## Project prerequisites
 ### Front End
