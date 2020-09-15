@@ -1,11 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Front End Submission</title>
-    </head>
-    <body>
-        <h1>nothing to look at here.</h1>
-        <h2>At least not yet.</h2>
-    </body>
-</html>
+{% extends 'basic_app/basic_app_base.html' %}
+{% load static %}
+
+{% block body_block %}
+  <img style="max-width: 100%;" src="{% static 'basic_app/Logo-White.png' %}" alt="WSoC Banner">
+  <div class="container-fluid">
+    <h1 class="text-center">FRONT END</h1>
+    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <br>
+  <div class="container-fluid">
+      <div>
+        <img style="max-width: 45%;float: right;" src="{% static 'basic_app/doggo-bread.jpg' %}" alt="doggo-bread" align="right" hspace="2%" vspace = "2%">
+      </div>
+      <h2 class="text-center">WEB DEVELOPMENT</h2>
+      <p class="text-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <footer>copyright: none</footer>
+{% endblock %}
