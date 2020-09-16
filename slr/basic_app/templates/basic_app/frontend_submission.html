@@ -1,11 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Front End Submission</title>
-    </head>
-    <body>
-        <h1>nothing to look at here.</h1>
-        <h2>At least not yet.</h2>
-    </body>
-</html>
+{% extends 'basic_app/basic_app_base.html' %}
+{% load static %}
+<title>Submission | Frontend</title>
+{% block body_block %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img style="max-width: 100%;" src="{% static 'basic_app/Logo-White.png' %}" alt="WSoC Banner">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <br>
+                <h1 class="text-center">FRONT END</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque corporis labore? Iure unde nostrum veritatis neque doloribus aspernatur harum. Voluptatum, odio. Quos illum quaerat facere quisquam expedita eveniet dolores!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <br>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque corporis labore? Iure unde nostrum veritatis neque doloribus aspernatur harum. Voluptatum, odio. Quos illum quaerat facere quisquam expedita eveniet dolores!</p>
+            </div>
+            <div class="col-lg-6">
+                <br>
+                <figure>
+                    <img src="{% static 'basic_app/doggo-bread.jpg' %}" class="img-responsive" alt="Image with caption.">
+                    <figcaption class="text-center">Bread doggo doin me a bamboozle</figcaption>
+                  </figure>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <footer>
+        <p class="text-center">&copy; copyright : none</p>
+    </footer>
+{% endblock %}
