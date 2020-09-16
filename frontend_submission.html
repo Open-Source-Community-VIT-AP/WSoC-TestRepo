@@ -1,0 +1,36 @@
+{% extends 'basic_app/basic_app_base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Front End Submission</title>
+    </head>
+    <body>
+        {% block body_block %}
+<img style="max-width: 100%;" src="{% static 'basic_app/Logo-White.png' %}" alt="WSoC Banner">
+<!-- <img src="{% static 'basic_app/Logo-White-Header.png'%}"> -->
+        <h1>Front End</h1>
+        <p>
+            Ut cupiditate est est. Consequuntur ducimus quis illo fugit voluptatem accusamus aut. Saepe cupiditate qui voluptas et ex voluptatem dolorem. Accusamus voluptas ea tenetur quod id. Excepturi voluptatem asperiores nam aliquam soluta doloremque. Nobis fuga est qui mollitia dolorem autem voluptas aspernatur.Qui amet ullam saepe reprehenderit mollitia quibusdam impedit sed. Aliquam blanditiis est recusandae nihil voluptas alias nam ea. Enim officia labore expedita et adipisci ex excepturi est. Itaque vel nihil amet a ex est libero.
+
+            Libero impedit repudiandae voluptas nisi quaerat nihil sint. Adipisci odit culpa nesciunt omnis sit architecto. A voluptates qui molestiae odit est ut aperiam. Quis temporibus ad qui accusamus qui.      
+        </p>
+        <div id="container" style="display: flex;">
+            <div id="left" style="width: 100%;">
+                <h3><b>Web Development</b></h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    </p>
+                    
+                </div>
+            <div id="right" style="max-width: 50%;">
+                <figure >
+                    <img style="max-width: 100%; margin:10px;" src="{% static 'basic_app/doggo-bread.jpg'%}" alt='not found'>
+                    <figcaption style="text-align: center;">Bread doggo</figcaption>
+                </figure>
+</div>
+        </div>
+        {% endblock %}
+    </body>
+</html>
