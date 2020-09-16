@@ -1,11 +1,95 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <!-- -----------------------------------------bootstrap css--------------------------------------------- -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- ------------------------------------------ custom css----------------------------------------------- -->
+        <link rel="stylesheet" href="{% static 'style.css' %}">
         <title>Front End Submission</title>
+
     </head>
     <body>
-        <h1>nothing to look at here.</h1>
-        <h2>At least not yet.</h2>
+        <!-- ---------------------------------------- navbar---------------------------------------------------------------- -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <a class="navbar-brand" href="{% url 'basic_app:index' %}">WSoC</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'basic_app:frontend' %}">Front End</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'basic_app:backend' %}">Back End </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'basic_app:frontend_submission' %}">Front End Submission</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">My App(18bce7082)</a>
+                    </li>
+                   
+                    
+                </ul>
+                
+            </div>
+        </nav>
+        <!-- -----------------------------------------------main section--------------------------------------------------- -->
+        <div class="container-fluid">
+<img class="img-fluid" src="{% static 'basic_app/Logo-White-Header.png' %}" alt="">
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center ">
+            <h1 >FRONT END</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit tempore molestiae mollitia necessitatibus
+                et porro ipsum minus aut nisi. Nobis officiis recusandae rem. Non, illum voluptatibus totam obcaecati quam
+                corporis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis tenetur esse veritatis
+                reiciendis quo aut reprehenderit nostrum vitae harum, excepturi officiis hic rem nam doloremque at ratione
+                ex. Sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, sint velit corrupti quas
+                obcaecati esse consequuntur quam alias atque quis commodi nesciunt cumque neque laboriosam eos molestias
+                tempora quaerat. Veritatis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id ipsam animi amet odio consectetur repellendus, facere commodi harum deleniti reprehenderit tempora quae mollitia impedit ullam reiciendis optio unde voluptatem eos.</p>
+        </div>
+    </div>
+    <hr>
+<div class="row my-5 ">
+    <div class="col-lg-6 img-thumbnail box-element left-box">
+        <h2 class="text-center my-3">Web Developement</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque corporis aperiam quaerat maxime perferendis pariatur error fugiat magnam culpa commodi, labore dolorem at mollitia eos eaque possimus hic, nobis earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere harum sit, reiciendis, eaque nostrum veniam repellendus, soluta nemo tenetur explicabo doloremque! Eligendi aliquid sed praesentium vel voluptates ut. Necessitatibus, ipsam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat accusamus dicta autem libero! Libero dicta odit molestias cum veritatis? Iusto enim obcaecati fugiat pariatur, accusantium explicabo distinctio architecto quisquam.</p>
+    </div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-5 box-element">
+       <figure><img class="img-fluid" src="{% static 'basic_app/doggo-bread.jpg' %}" alt="">
+    <figcaption>By- Ashutosh Kumar Singh (18bce7082)</figcaption></figure>
+    </div>
+</div>
+</div>
+        </div>
+        
+<!-- ----------------------------------------------------- footer-------------------------------------------------- -->
+<footer>
+    <div class="footer-copyright text-center py-3 bg-dark text-white">copyright:none
+    
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+        <!-- --------------------bootstrap scripts -->
     </body>
 </html>

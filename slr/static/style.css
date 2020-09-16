@@ -1,0 +1,13 @@
+.container-fluid .container .col-lg-12 h1{
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+.box-element{
+ box-shadow: hsl(0, 0%, 80%) 0 0 16px;
+ background-color: #fff;
+ border-radius: 4px;
+ padding: 10px;
+}
+.left-box{
+ border-left: 4px solid darkcyan;
+}
