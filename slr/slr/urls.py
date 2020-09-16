@@ -19,7 +19,7 @@ from submission import views
 
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('',include('submission.urls')),
     path('wsoc/', include('basic_app.urls')),
     path('admin/', admin.site.urls),
 ]
