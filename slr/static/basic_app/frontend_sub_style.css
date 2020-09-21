@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+  color: red;
+}
+
+.gridsys {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  padding: 10px;
+  grid-column-gap: 30px;
+}
+
+.item {
+  border: 2px solid;
+  background-color: #d3cece;
+}

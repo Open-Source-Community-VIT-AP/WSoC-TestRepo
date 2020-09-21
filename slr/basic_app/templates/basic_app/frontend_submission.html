@@ -1,11 +1,114 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Front End Submission</title>
-    </head>
-    <body>
-        <h1>nothing to look at here.</h1>
-        <h2>At least not yet.</h2>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FRONTEND</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <!-- Material Design Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'basic_app/frontend_sub_style.css' %}"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <sapn class="icon-bar"></sapn>
+          </button>
+        </div>
+        <ul class="nav navbar-nav navbar-left collapse navbar-collapse">
+          <li><a href="{% url 'basic_app:index' %}">WSoC</a></li>
+          <li><a href="{% url 'basic_app:frontend' %}">Front End</a></li>
+          <li><a href="{% url 'basic_app:backend' %}">Back End</a></li>
+          <li>
+            <a href="{% url 'basic_app:frontend_submission' %}"
+              >Front End Submission</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="jumbotron">
+        {% block body_block %}
+        <img
+          style="max-width: 100%"
+          src="{% static 'basic_app/Logo-White-Header.png' %}"
+          alt="WSoC Banner"
+        />
+        <h1>FRONTEND</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas eos
+          fugiat ullam similique quis, vel aliquid illum mollitia. Obcaecati
+          eius, laborum voluptas perferendis libero asperiores hic provident
+          saepe ex quidem.laborum voluptas perferendis libero asperiores hic
+          provident saepe ex quidem.
+        </p>
+
+        <div class="gridsys">
+          <div class="item">
+            <h2 style="text-align: center">Web Development</h2>
+            <p style="padding: 20px">
+              The Open Source Community, VIT-AP is a year old. Our major goal is
+              to write free software and to collaborate with student developers,
+              to create a community of excellent programmers. Innovation is what
+              we aim to achieve. We also help student developers to gain an
+              exposure to the competitive world by conducting Hackathons,
+              hands-on workshops, guest lectures and other tech related
+              activities.
+            </p>
+          </div>
+          <div class="item">
+            <img
+              style="max-width: 100%"
+              src="{% static 'basic_app/doggo-bread.jpg' %}"
+              alt="WSoC Banner"
+            />
+            <p style="padding: 25px">
+              A cat loaf is the name of the position your cat sits in when they
+              have their paws and tail tucked beneath them, resembling a loaf of
+              bread. Actually there’s something undeniably cute about a cat in
+              loaf formation.
+            </p>
+          </div>
+        </div>
+
+        {% endblock %}
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-large black" style="padding: 13px">
+      <div class="footer-copyright text-center">
+        © 2020 Copyright: none
+        <a href="https://oscvitap.co.in/"> OSC - VITAP</a>
+      </div>
+    </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>
