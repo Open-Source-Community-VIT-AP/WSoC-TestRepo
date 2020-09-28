@@ -1,11 +1,69 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Front End Submission</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Frontend Submission</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            a:focus {
+                outline: none;
+            }
+            .nav-link {
+                font-size: 15px;
+            }
+            .navbar-nav > li{
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            .navbar {
+                padding-left: 10em;
+                background-color: #222;
+            }
+            
+            @media (max-width: 600px) {
+                .navbar {
+                    padding-left: 2em;
+                }
+                .navbar-nav > li{
+                margin-left: 0;
+                margin-right: 0;
+            }
+            }
+        </style>
     </head>
     <body>
-        <h1>nothing to look at here.</h1>
-        <h2>At least not yet.</h2>
+        <nav class="navbar navbar-expand-md navbar-default navbar-dark">
+           <a href="{% url 'basic_app:index' %}" class="navbar-brand">WSoc</a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#altnavbar">
+           <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="navbar-collapse collapse" id="altnavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'basic_app:frontend' %}">Front End</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'basic_app:backend' %}">Back End</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'basic_app:frontend_submission' %}">Front End Submission</a>
+                    </li>    
+                  </ul>
+           </div>
+        </nav>
+        <div class=" container-fluid banner-image">
+            <img src="{% static 'basic_app/Logo-White.png' %}" class="img-fluid" alt="banner-image">
+        </div>
+        <div class="container-fluid headingcontent text-center mb-5">
+            <div class="container">
+                <h1>FRONT END</h1>
+                <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolor doloribus rem temporibus quisquam atque molestiae sed, iusto earum dignissimos officia! Rem hic odit asperiores id deserunt numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolor doloribus rem temporibus quisquam atque molestiae sed, iusto earum dignissimos officia! Rem hic odit asperiores id deserunt numquam.</p>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>
