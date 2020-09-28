@@ -21,7 +21,15 @@
                 padding-left: 10em;
                 background-color: #222;
             }
-            
+            .content {
+                margin-top: 7em;
+            }
+            .sections {
+                box-shadow: 0px,0px,0px,rgba(0,0,0,0.5);
+            }
+            .footer {
+                border-top: 1px solid grey;
+            }
             @media (max-width: 600px) {
                 .navbar {
                     padding-left: 2em;
@@ -29,7 +37,7 @@
                 .navbar-nav > li{
                 margin-left: 0;
                 margin-right: 0;
-            }
+                }
             }
         </style>
     </head>
@@ -62,6 +70,23 @@
                 <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolor doloribus rem temporibus quisquam atque molestiae sed, iusto earum dignissimos officia! Rem hic odit asperiores id deserunt numquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolor doloribus rem temporibus quisquam atque molestiae sed, iusto earum dignissimos officia! Rem hic odit asperiores id deserunt numquam.</p>
             </div>
         </div>
+        <div class="container-fluid content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-2 col-12 text-center sections pt-3">
+                        <h3>Web Development</h3>
+                        <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, vitae nisi fugiat quae error ex dolor reprehenderit assumenda tempore dolores consequuntur optio mollitia aspernatur minima quisquam alias modi nulla. Nobis?</p>
+                    </div>
+                    <div class="col-md-6 col-sm-2 col-12 text-center sections pt-3">
+                        <img src="{% static 'basic_app/doggo-bread.jpg' %}" alt="doggo-image" width="200" height="200">
+                        <p>A beautiful doggy painted on a bread</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="container-fluid footer mb-4 mt-5">
+            <p class="text-center pt-3">&copy; Copyright : None</p>
+        </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
