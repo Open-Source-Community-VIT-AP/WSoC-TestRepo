@@ -2,10 +2,84 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Front End Submission</title>
+        <title>frontend_submission</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+
+
+            .banner{
+                width:100%;
+                display:block;
+            }
+            .banner > .banner-image{
+                width:100%;
+                display:block;
+            }
+            p{
+                font-size: 20px;
+            }
+            .child{
+                border: 5px solid black;
+            }
+            @media(min-width: 566px){
+            .parent{
+                display:flex;
+            }
+            }
+            body{
+                background-color:grey;   
+            }
+            .footer {
+   
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: center;
+}
+            </style>
+
     </head>
+
     <body>
-        <h1>nothing to look at here.</h1>
-        <h2>At least not yet.</h2>
+     
+        <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li><a class="navbar-brand" href="{% url 'basic_app:index' %}">WSoC</a></li>
+                    <li><a class="navbar-link" href="{% url 'basic_app:frontend' %}">Front End</a></li>
+                    <li><a class="navbar-link" href="{% url 'basic_app:backend' %}">Back End</a></li>
+                    <li><a class="navbar-link" href="{% url 'basic_app:frontend_submission' %}">Front End Submission</a></li>
+                </ul>
+            </div>
+        </nav>
+          
+       <div class="banner">
+           <img class="banner-image" src="C:\Users\KAVYASRI DACHARLA\WSoC-TestRepo1\slr\static\basic_app\Logo-White-Header.png">
+       </div>
+       <h1><strong>FRONT END</strong></h1>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    <section class="parent">
+       <section class="child">
+        <h3>"WEB DEVELOPMENT"</h3>
+        <p><mark>Lorem ipsum</mark> dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. <strong>Quis aute</strong> iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        <p><mark>Lorem ipsum</mark> dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.<strong> Quis aute</strong> iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        <p><mark>Lorem ipsum</mark> dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.<strong> Quis aute </strong> reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </section>
+    <section class="child">
+        <img style="float: centre" ; padding: 15px 25px 10px 20px; src="C:\Users\KAVYASRI DACHARLA\WSoC-TestRepo1\slr\static\basic_app\doggo-bread.jpg" alt="Flowers in Chania" width="560" height="345">
+        <br>
+    </br>
+   <i style="text-align:centre" ; padding:100px 25px 10px 20px ; font-weight: bold; >"Everybody needs beauty as well as bread,placers to play in and pray in,where nature may heal and give strength to body and soul"</i>
+
+     
+    </section>
+    </section>
+    <div class="footer">
+        <p>copyright:none</p>
+      </div>
+
+  
     </body>
 </html>
