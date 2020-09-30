@@ -4,8 +4,7 @@ from django.urls import path
 app_name = 'basic_app'
 
 urlpatterns = [
-    path('', views.IndexView.as_view(), name='index'),
-    path('frontend/', views.FrontEndView.as_view(), name='frontend'),
-    path('backend/', views.BackEndView.as_view(), name='backend'),
-    path('frontendsubmission/', views.FrontEndSubmissionView.as_view(), name='frontend_submission'),
+    path('', views.base_view.as_view(), name='base'),
+    path('contact/',views.contact_view.as_view(),name='contact'),
+    path('about/',views.about_view.as_view(),name='about'),
 ]

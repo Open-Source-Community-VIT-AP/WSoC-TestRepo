@@ -1,20 +1,17 @@
-from django.shortcuts import render
+#from django.shortcuts import render
+
 from django.views.generic import TemplateView
 
 app_name = 'basic_app'
 
 
-class IndexView(TemplateView):
-    template_name = 'basic_app/index.html'
+class base_view(TemplateView):
+    template_name = 'basic_app/base.html'
 
 
-class FrontEndView(TemplateView):
-    template_name = 'basic_app/frontend.html'
+class contact_view(TemplateView):
+    template_name = 'basic_app/contact.html'
 
 
-class BackEndView(TemplateView):
-    template_name = 'basic_app/backend.html'
-
-
-class FrontEndSubmissionView(TemplateView):
-    template_name = 'basic_app/frontend_submission.html'
+class about_view(TemplateView):
+    template_name = 'basic_app/about.html'
