@@ -1,23 +1,70 @@
-{% extends 'basic_app/basic_app_base.html' %}
-<title>Index Page</title>
-{% block body_block %}
-    <h1>Welcome to the Back End Section.</h1>
-    <h2>In order to make a successful pull request, you must be able to set up the backend, according to the following methods.</h2>
-    <h3>It would help for you to look into the given ideas, before you proceed to work on the back end.</h3>
-    <ul class="list-group">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Backend Page</title>
+  <!-- CSS styling -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/basic_app/styles.css">
+
+  <!-- bootstrap script -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #212121;">
+    <a class="navbar-brand" href="#"></a>
+    <a class="navbar navbar-brand" href="index.html">WSoC</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navtog01" aria-controls="navtog01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navtog01">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link" href="frontend_submission.html">Front End</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="backend.html">Back End</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="frontend_submission.html">Front End Submission</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="space">
+    <p> </p>
+
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Welcome to the Back End Section.</h1>
+      <h2>In order to make a successful pull request, you must be able to set up the backend, according to the following methods.</h2>
+      <h3>It would help for you to look into the given ideas, before you proceed to work on the back end.</h3>
+      <ul class="list-group">
         <li class="list-group-item">Consider looking into the django docs, on how to create a new application.</li>
         <li class="list-group-item">Check into how you should connect views, templates, and urls in Django.</li>
         <li class="list-group-item">A good practice would be to set up your own Django website, before you work on this one, in case you do not know much about Django.</li>
         <li class="list-group-item">Look into template inheritance in order to understand how basic_app's web pages are working.</li>
-    </ul>
-    <h3>The tasks below are the ones which are expected to be accomplished, in order for a successful pull request.</h3>
-    <ul class="list-group">
+      </ul>
+      <h3>The tasks below are the ones which are expected to be accomplished, in order for a successful pull request.</h3>
+      <ul class="list-group">
         <li class="list-group-item">Creating a new application using django commands.</li>
         <li class="list-group-item">Create views, and templates for the new application.</li>
         <li class="list-group-item">Connect the new application to slr, using settings.py</li>
         <li class="list-group-item">Either use the base template or make your own, and create a simple web page, with a title, a subtitle, and a lorem Ipsum paragraph.</li>
         <li class="list-group-item">Be sure to connect the application, such that it can be accessed when the django runs the server.</li>
         <li class="list-group-item">(Optional) Add in a navbar-link into the navbar on the index page, to link to your application's display page.</li>
-    </ul>
-    <a class="btn btn-primary" href="{% url 'basic_app:index' %}">Back to home</a>
-{% endblock %}
+      </ul>
+      <a class="btn btn-outline-primary btn-sm" href="index.html">Back to home</a>
+    </div>
+  </div>
+</body>
+<footer>
+  <p> © 2020 copyright : none</p>
+</footer>
+
+</html>
