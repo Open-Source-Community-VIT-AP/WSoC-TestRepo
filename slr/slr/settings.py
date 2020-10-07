@@ -25,7 +25,7 @@ SECRET_KEY = 'j2el!5kanxf4$$%4r#b4p1z75z9-sv11kbzbqjru94o^u0o46k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'basic_app',
+    'temp',
 ]
 
 MIDDLEWARE = [
