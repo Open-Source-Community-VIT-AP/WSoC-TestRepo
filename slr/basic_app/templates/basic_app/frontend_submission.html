@@ -1,37 +1,84 @@
 <!DOCTYPE html>
-{% extends 'basic_app/basic_app_base.html' %}
 {% load static %}
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>Front End Submission</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            .header{
+                background-color: black;
+            }
+            .footer {
+              height:40px;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              background-color:black;
+              color: white;
+              text-align: center;
+              font-size: 20px;
+            }
+            </style>
     </head>
     <body>
         <!--<h1>nothing to look at here.</h1>
         <h2>At least not yet.</h2> -->
-        {% block body_block %}
-        <img style="max-width: 100%; max-height:100%" src="{% static "basic_app/Logo-White.png" %}" alt="WSoC Banner">
-        
-        <h1>FRONT END</h1>
-        <p>Lorem ipsum dolor sit amet, veniam patrioque qui ex, mei ad accusam epicurei percipitur, ex dolor dolores iracundia mel. Quis ubique ad vix. Detraxit sapientem ius ei, pertinax oportere per ex. Ea idque consectetuer pri, tibique omittantur at pri.</p>
+        <nav class="navbar navbar-dark navbar-expand-sm header">
+         <div class="container">
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+             <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li><a class="nav-link" href="{% url 'basic_app:index' %}">WSoC</a></li>
+                    <li><a class="nav-link" href="{% url 'basic_app:frontend' %}">Front End</a></li>
+                    <li><a class="nav-link" href="{% url 'basic_app:backend' %}">Back End</a></li>
+                    <li><a class="nav-link" href="{% url 'basic_app:frontend_submission' %}">Front End Submission</a></li>
+                </ul>
+              </div>
+        </div>
+        </nav>
         <div class="container">
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-6">
-            <h2>Web Development</h2>
-            <h4>Lorem ipsum dolor sit amet, veniam patrioque qui ex, mei ad accusam epicurei percipitur, ex dolor dolores iracundia mel. Quis ubique ad vix. Detraxit sapientem ius ei, pertinax oportere per ex. Ea idque consectetuer pri, tibique omittantur at pri.
-
-            </h4>
+            <div class="jumbotron">
+               {% block body_block %}
+              <img style="max-width: 100%; max-height:100%" src="{% static "basic_app/Logo-White.png" %}" alt="WSoC Banner">
+        <br>
+             <h1 align="center">FRONT END</h1>
+             <p>Lorem ipsum dolor sit amet, veniam patrioque qui ex, mei ad accusam epicurei percipitur, ex dolor dolores iracundia mel. 
+                 Quis ubique ad vix. Detraxit sapientem ius ei, pertinax oportere per ex. Ea idque consectetuer pri, tibique omittantur at pri.</p>
+        <div class="container">
+            <div class="row row-content align-items-center">
+               <div class="col-12 col-sm-6">
+                <div class="card" style="width: 22rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Web Development</h5>
+                      <p class="card-subtitle">Lorem ipsum dolor sit amet, veniam patrioque qui ex, mei ad accusam epicurei percipitur, ex dolor dolores iracundia mel. 
+                        Quis ubique ad vix. Detraxit sapientem ius ei, pertinax oportere per ex. Ea idque consectetuer pri, tibique omittantur at pri.
+                        Lorem ipsum dolor sit amet, veniam patrioque qui ex, mei ad accusam epicurei percipitur, ex dolor dolores iracundia mel. 
+                        Quis ubique ad vix.</p>
+                      
+                    </div>
+                  </div>
+               </div>
+                <div class="col-12 col-sm-6">
+                    <div class="card" style="width: 22rem;">
+                        <img src="{% static "basic_app/doggo-bread.jpg" %}" class="card-img-top" alt="doggo-bread">
+                        <div class="card-body">
+                          <h5 class="card-title">A card with doggo bread</h5>
+                          
+                        </div>
+                      </div>
+                 </div>
             </div>
-            <div class="col-12 col-sm-6">
-                <h2> Web</h2>
-            </div>
+        </div>
         </div>
         </div>
         <footer class="footer">
-            <div class="container">
-                copyright:none
-            </div>
-            </footer>
+                       <p align="center">copyright:none</p>
+        </footer>
+        
         {% endblock %}
     </body>
+
 </html>
