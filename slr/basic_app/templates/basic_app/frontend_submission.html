@@ -1,11 +1,74 @@
+{% load static %}
+
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>Front End Submission</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+.section1{
+font-size:50px;
+font-style:normal;
+font-weight:bold;
+}
+.section3{
+font-weight:bold;
+}
+.image img{
+width:300px;
+height:300px;
+}
+footer {
+   
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: center;
+}
+</style>
     </head>
-    <body>
-        <h1>nothing to look at here.</h1>
-        <h2>At least not yet.</h2>
+    <body >
+       <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+	     <div class="container">
+		<div class="navbar-header">
+		    <a class="navbar-brand" href=""{% url 'basic_app:index' %}"">WSoC</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a class="nav-link" href="{% url 'basic_app:frontend' %}">Front End</a></li>
+			<li><a class="nav-link" href="{% url 'basic_app:backend' %}">Back End</a></li>
+			<li><a class="nav-link" href="{% url 'basic_app:frontend_submission' %}">Front End Submission</a></li>
+		</ul>
+              </div>
+	 </nav>
+                <div class="container-fluid">
+                     <img style="max-width:100%" src="{% static 'basic_app/Logo-White.png' %}" class="img-fluid" alt="WSoC Banner">
+                </div>
+		<div class="container">
+			<h1 class="text-center text-uppercase section1">Front End</h1>
+                        <p class="text-justify ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                     <div class="row">
+                          <div class="col-sm-6">
+		               <h2 class="text-left section3">Web Development</h2>
+			       <p class="text-left text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+ 		          </div>
+                    
+		          <div class="col-sm-6 text-center image">
+		               <img  src="{% static 'basic_app/doggo-bread.jpg' %}"  alt="doggo-bread" >
+		          </div>	
+	            </div>
+              </div>
+          <br>
+        
+	 <footer >
+	  Copyright:none
+	 </footer>
+		
+          
     </body>
 </html>
