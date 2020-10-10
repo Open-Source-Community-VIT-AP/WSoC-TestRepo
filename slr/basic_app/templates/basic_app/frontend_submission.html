@@ -3,6 +3,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Front End Submission</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <style>
@@ -50,7 +52,7 @@
         <div class="container">
             <div class="row row-content align-items-center">
                <div class="col-12 col-sm-6">
-                <div class="card" style="width: 22rem;">
+                <div class="card">
                     <div class="card-body">
                       <h5 class="card-title">Web Development</h5>
                       <p class="card-subtitle">Lorem ipsum dolor sit amet, veniam patrioque qui ex, mei ad accusam epicurei percipitur, ex dolor dolores iracundia mel. 
@@ -62,23 +64,24 @@
                   </div>
                </div>
                 <div class="col-12 col-sm-6">
-                    <div class="card" style="width: 22rem;">
-                        <img src="{% static "basic_app/doggo-bread.jpg" %}" class="card-img-top" alt="doggo-bread">
-                        <div class="card-body">
-                          <h5 class="card-title">A card with doggo bread</h5>
-                          
-                        </div>
-                      </div>
-                 </div>
+                    
+                      <figure>
+                        <img src="{% static "basic_app/doggo-bread.jpg" %}" alt="doggo-bread" style="width:20rem">
+                        <figcaption class="text-dark" style="width:22rem">A Caption</figcaption>
+                      </figure>
+                 
             </div>
         </div>
         </div>
         </div>
+        </div>
+  
+      </body>
         <footer class="footer">
                        <p align="center">copyright:none</p>
         </footer>
         
         {% endblock %}
-    </body>
+    
 
 </html>
